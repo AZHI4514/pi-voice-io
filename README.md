@@ -33,7 +33,7 @@ pi Agent terminal
 ## 安装到 pi Agent
 
 ```powershell
-git clone <你的 GitHub 仓库地址> pi-voice-io
+git clone [<你的 GitHub 仓库地址>](https://github.com/AZHI4514/pi-voice-io.git) pi-voice-io
 cd pi-voice-io
 npm.cmd ci
 pi.cmd -e .\src\extension.ts
