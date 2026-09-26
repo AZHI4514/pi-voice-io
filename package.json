@@ -1,0 +1,33 @@
+{
+  "name": "pi-voice-io",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "pi": {
+    "extensions": [
+      "./src/extension.ts"
+    ]
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit",
+    "format:check": "prettier --check src test audio web package.json README.md models/README.md"
+  },
+  "dependencies": {
+    "@ricky0123/vad-web": "0.0.27",
+    "onnxruntime-web": "1.22.0",
+    "sherpa-onnx": "1.12.17",
+    "ws": "8.21.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "0.87.1",
+    "@types/node": "22.18.6",
+    "@types/ws": "8.18.1",
+    "prettier": "3.6.2",
+    "typescript": "5.9.2"
+  }
+}

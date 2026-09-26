@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pi Voice I/O 音频连接</title>
+  <style>
+    body {
+      font: 16px system-ui;
+      max-width: 440px;
+      margin: 12vh auto;
+      padding: 0 24px;
+      color: #192323;
+      background: #f4f7f5;
+    }
+    h1 {
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    button {
+      border: 0;
+      background: #117b5f;
+      color: white;
+      padding: 12px 18px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    button:disabled {
+      background: #87958d;
+      cursor: default;
+    }
+    #state {
+      margin: 24px 0;
+      min-height: 2em;
+    }
+  </style>
+  <h1>Pi Voice I/O</h1>
+  <p id="state" role="status">等待连接</p>
+  <button id="enable" type="button">启用麦克风</button>
+  <p id="device"></p>
+  <script src="/ort.js" defer></script>
+  <script src="/vad.js" defer></script>
+  <script src="/client.js" defer></script>
+</html>
